@@ -240,7 +240,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 412291559}
         m_TargetAssemblyTypeName: AnimationController, Assembly-CSharp
-        m_MethodName: TriggerJumpAnimation
+        m_MethodName: JumpAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
