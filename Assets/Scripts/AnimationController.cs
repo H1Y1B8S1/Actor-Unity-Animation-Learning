@@ -12,4 +12,11 @@ public class AnimationController : MonoBehaviour
         characterAnimator.SetTrigger(JumpTrigger);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TriggerJumpAnimation(); // Call the existing method to trigger the jump animation
+        }
+    }
 }
