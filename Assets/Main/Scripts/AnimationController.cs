@@ -13,6 +13,14 @@ public class AnimationController : MonoBehaviour
         float triggerLeft = OVRInput.Get(OVRInput.RawAxis1D.LIndexTrigger); // between 0 and 1.
         float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
 
+
+        // Additional buttons on the Oculus Touch controllers
+        bool buttonA = OVRInput.Get(OVRInput.Button.One); // Button A
+        bool buttonB = OVRInput.Get(OVRInput.Button.Two); // Button B
+        bool buttonX = OVRInput.Get(OVRInput.Button.Three); // Button X
+        bool buttonY = OVRInput.Get(OVRInput.Button.Four); // Button Y
+
+
         // Move forward if the left trigger is pressed
         if (triggerLeft > 0.9)
         {
@@ -27,6 +35,29 @@ public class AnimationController : MonoBehaviour
             float rotationAmount = rotationInput * rotationSpeed * Time.deltaTime;
             ovrControllerRig.Rotate(Vector3.up, rotationAmount);
         }
+
+        // Additional functionality based on button presses
+        if (buttonA)
+        {
+            // Do something when Button A is pressed
+        }
+
+        if (buttonB)
+        {
+            // Do something when Button B is pressed
+        }
+
+        if (buttonX)
+        {
+            // Do something when Button X is pressed
+        }
+
+        if (buttonY)
+        {
+            // Do something when Button Y is pressed
+        }
+
+
     }
 }
 
